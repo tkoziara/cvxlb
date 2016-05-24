@@ -19,12 +19,12 @@ OBJ =   err.o \
 	cvi.o \
 	predicates.o
 
-libhul.a: $(OBJ)
+libcvx.a: $(OBJ)
 	ar rcv $@ $(OBJ)
 	ranlib $@ 
 
 clean:
-	rm -f libhul
+	rm -f libcvx.a
 	rm -f *.o
 
 err.o: err.c err.h
